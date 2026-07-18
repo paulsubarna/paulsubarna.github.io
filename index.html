@@ -10,14 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0D1219;
-    --surface: #141B26;
-    --ink: #E6EAF0;
-    --muted: #8A94A3;
-    --accent: #6FD0E8;      /* ice cyan */
-    --accent-dim: #3B6E7E;
-    --amber: #F0B429;       /* cursor & small highlights */
-    --hairline: #223041;
+    --bg: #FAF7F0;          /* warm paper */
+    --surface: #F0EBDF;     /* card / chip fill */
+    --ink: #29241F;         /* warm charcoal */
+    --muted: #797166;
+    --accent: #3E6B4F;      /* deep moss green */
+    --accent-dim: #9AB3A2;
+    --amber: #B9862E;       /* cursor, year spine */
+    --hairline: #E4DDCD;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -25,7 +25,7 @@
 
   body {
     background: var(--bg);
-    background-image: radial-gradient(circle, #1B2533 1px, transparent 1px);
+    background-image: radial-gradient(circle, #E8E1D2 1px, transparent 1px);
     background-size: 28px 28px;
     color: var(--ink);
     font-family: 'IBM Plex Sans', system-ui, sans-serif;
@@ -34,7 +34,7 @@
     -webkit-font-smoothing: antialiased;
   }
   main { max-width: 780px; margin: 0 auto; padding: 0 24px; }
-  ::selection { background: var(--accent); color: var(--bg); }
+  ::selection { background: var(--accent); color: #FAF7F0; }
 
   a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 120ms ease, color 120ms ease; }
   a:hover, a:focus-visible { border-bottom-color: var(--accent); }
@@ -95,7 +95,7 @@
 
   .portrait { width: 168px; height: 168px; border-radius: 10px; object-fit: cover;
     border: 1px solid var(--hairline); outline: 3px solid var(--surface);
-    box-shadow: 0 0 0 1px var(--accent-dim), 0 12px 32px rgba(0,0,0,0.45); }
+    box-shadow: 0 0 0 1px var(--accent-dim), 0 10px 28px rgba(62, 60, 45, 0.18); }
 
   /* ---------- Sections ---------- */
   section { border-top: 1px solid var(--hairline); padding: 48px 0; }
@@ -126,7 +126,7 @@
 
   /* ---------- Footer ---------- */
   footer { border-top: 1px solid var(--hairline); padding: 36px 0 72px; color: var(--muted); font-size: 0.82rem; font-family: 'IBM Plex Mono', monospace; }
-  footer .ok { color: #58C08A; }
+  footer .ok { color: #4C8A63; }
 
   @media (max-width: 620px) {
     header.hero { grid-template-columns: 1fr; padding-top: 48px; }
@@ -173,7 +173,7 @@
         <a href="cv.pdf">CV (PDF)</a>
       </nav>
     </div>
-    <img class="portrait" src="Photo.jpeg" alt="Portrait of Subarnaduti Paul">
+    <img class="portrait" src="photo.jpg" alt="Portrait of Subarnaduti Paul">
   </header>
 
   <section id="about" style="border-top:none; padding-top:0;">
