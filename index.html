@@ -1,1 +1,271 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subarnaduti Paul — Ph.D. Researcher</title>
+<meta name="description" content="Academic homepage of Subarnaduti Paul: continual learning, machine unlearning, and Bayesian uncertainty in foundation models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FDFDFB;
+    --ink: #1A1C1E;
+    --muted: #5F6469;
+    --accent: #234E70;
+    --hairline: #E4E2DC;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 120ms ease; }
+  a:hover, a:focus-visible { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* ---------- Header ---------- */
+  header.site { padding: 88px 0 40px; }
+  h1 {
+    font-family: 'Spectral', Georgia, serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .role {
+    font-family: 'Spectral', Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .bio { margin-top: 24px; max-width: 62ch; }
+  .bio + .bio { margin-top: 14px; }
+  .links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 0.92rem; font-weight: 500; }
+
+  /* ---------- Sections ---------- */
+  section { border-top: 1px solid var(--hairline); padding: 44px 0; }
+  h2 {
+    font-family: 'Spectral', Georgia, serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin-bottom: 26px;
+  }
+
+  /* ---------- Timeline entries ---------- */
+  .entry { display: grid; grid-template-columns: 130px 1fr; gap: 16px; margin-bottom: 20px; }
+  .entry .when { color: var(--muted); font-size: 0.88rem; padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .entry .what strong { font-weight: 600; }
+  .entry .what .detail { color: var(--muted); font-size: 0.94rem; }
+
+  /* ---------- Publications: year spine ---------- */
+  .pubyear { display: grid; grid-template-columns: 130px 1fr; gap: 16px; margin-bottom: 8px; }
+  .pubyear .year {
+    font-family: 'Spectral', Georgia, serif;
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.05rem;
+    padding-top: 2px;
+  }
+  .pubyear ul { list-style: none; }
+  .pubyear li { margin-bottom: 16px; padding-left: 1.1em; text-indent: -1.1em; }
+  .pub-title { font-weight: 600; }
+  .pub-venue { font-family: 'Spectral', Georgia, serif; font-style: italic; color: var(--muted); }
+  .pub-note { color: var(--muted); font-size: 0.9rem; }
+
+  /* ---------- Footer ---------- */
+  footer { border-top: 1px solid var(--hairline); padding: 36px 0 72px; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 560px) {
+    header.site { padding-top: 56px; }
+    h1 { font-size: 1.9rem; }
+    .entry, .pubyear { grid-template-columns: 1fr; gap: 2px; }
+    .entry .when { padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="site">
+    <h1>Subarnaduti Paul</h1>
+    <p class="role">Ph.D. Researcher · TU Darmstadt &amp; University of Bremen</p>
+    <p class="bio">
+      I am a Ph.D. candidate specializing in continual learning algorithms, with expertise in
+      computer vision, multimodal AI, and Bayesian uncertainty modeling. My research drives the
+      sequential adaptation of foundation models through advances in continual learning and
+      machine unlearning, with a strong focus on scalability and computational efficiency.
+    </p>
+    <p class="bio">
+      I am passionate about advancing interpretability and fairness in large-scale models, and
+      eager to contribute to both academic and applied real-world applications. I am currently
+      based in Bremen, Germany.
+    </p>
+    <nav class="links" aria-label="Profile links">
+      <a href="mailto:sd.paul56@gmail.com">Email</a>
+      <a href="https://scholar.google.com/">Google Scholar</a>
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="cv.pdf">CV (PDF)</a>
+    </nav>
+  </header>
+
+  <section id="experience">
+    <h2>Research Experience</h2>
+    <div class="entry">
+      <div class="when">Jul 2022 – present</div>
+      <div class="what">
+        <strong>Ph.D. Researcher</strong>, TU Darmstadt &amp; University of Bremen, Germany<br>
+        <span class="detail">
+          Scalable continual learning for foundation models with reduced computational complexity.
+          Proposed novel continual learning algorithms for federated systems (CONFEDMADE) and
+          multimodal setups (CoreTokensets), coupled with Variational Continual Learning.
+          Developed a benchmark for machine unlearning in LLMs, revealing key weaknesses of
+          language models in handling semantically evolving linguistic concepts.
+        </span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">Jun &amp; Nov – Dec 2025</div>
+      <div class="what">
+        <strong>Visiting Student Researcher</strong>, RIKEN AIP, Tokyo, Japan<br>
+        <span class="detail">
+          Scalable approaches for Variational Continual Learning in foundation models, focusing
+          on uncertainty quantification with Bayesian algorithms.
+        </span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">Feb 2021 – Feb 2022</div>
+      <div class="what">
+        <strong>AI Engineer Intern</strong>, Bosch, Ulm, Germany<br>
+        <span class="detail">
+          Unsupervised feature extraction for noisy industrial sensory data; attention mechanism
+          for 1D time-series; online training and edge deployment pipeline on Microsoft Azure.
+        </span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">May 2019 – Aug 2019</div>
+      <div class="what">
+        <strong>Research Intern</strong>, Technical University of Munich<br>
+        <span class="detail">
+          Designed and simulated switching features for on-chip network routers (ONoC) at the
+          Chair of Electronic Design Automation.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="when">2018 – 2021</div>
+      <div class="what">
+        <strong>MSc in Communication Engineering</strong>, Technical University of Munich<br>
+        <span class="detail">Thesis: “Autoencoder-based Efficient Feature Extractor for Noisy Industrial Data” (Grade: 1.0)</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2014 – 2018</div>
+      <div class="what">
+        <strong>B.Tech in Electronics &amp; Communication Engineering</strong>, Bengal Institute of Technology, Kolkata, India<br>
+        <span class="detail">DGPA: 8.91/10</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="pubyear">
+      <div class="year">2025</div>
+      <ul>
+        <li>
+          <span class="pub-title">CHRONOBERG: Capturing Language Evolution and Temporal Awareness in Foundation Models.</span>
+          <span class="pub-venue">Preprint.</span>
+          <span class="pub-note">Joint first author.</span>
+        </li>
+        <li>
+          <span class="pub-title">The Cake that is Intelligence and Who Gets to Bake it: An AI Analogy and its Implications for Participation.</span>
+          <span class="pub-venue">Preprint.</span>
+          <span class="pub-note">Co-author.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pubyear">
+      <div class="year">2024</div>
+      <ul>
+        <li>
+          <span class="pub-title">CoreTokensets for Data Efficient Sequential Adaptation of Transformers.</span>
+          <span class="pub-venue">6th CLVision Workshop, ICCV 2025.</span>
+          <span class="pub-note">First author.</span>
+        </li>
+        <li>
+          <span class="pub-title">BOWL: A Deceptively Simple Open World Learner.</span>
+          <span class="pub-venue">CoLLAs 2025.</span>
+          <span class="pub-note">Co-author.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pubyear">
+      <div class="year">2023</div>
+      <ul>
+        <li>
+          <span class="pub-title">Masked Autoencoders are Efficient Continual Federated Learners.</span>
+          <span class="pub-venue">CoLLAs 2024.</span>
+          <span class="pub-note">First author.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pubyear">
+      <div class="year">2022</div>
+      <ul>
+        <li>
+          <span class="pub-title">Extract, Compress, and Encode: LitNet, an Autoencoder for Noisy Time-Series Data.</span>
+          <span class="pub-venue">ICIT 2022, China.</span>
+          <span class="pub-note">Joint first author.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="entry">
+      <div class="when">May – Jun 2025</div>
+      <div class="what">
+        <strong>Continually merging LLMs via Fisher Information</strong><br>
+        <span class="detail">Sequential model merging in an online continual setup, weighting relevancy via the Fisher Information Matrix.</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">Apr – Jun 2024</div>
+      <div class="what">
+        <strong>From Samples to Tokens: compact memory buffers</strong><br>
+        <span class="detail">Token-level data summarization for transformers by interpreting attention scores across input tokens.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Last updated July 2026 · Built with plain HTML, hosted on GitHub Pages.</p>
+  </footer>
+
+</main>
+</body>
+</html>
